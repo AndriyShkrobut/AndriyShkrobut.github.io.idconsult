@@ -1,0 +1,401 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(2,45,61);
+}
+
+.clearfix:after{
+    content:'';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+ul, li{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+div, span, button, a, p, h1, h2, h3, h4, h5{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.Header{
+    background: url('../img/Top_Background.jpg') no-repeat center top / cover;
+    color: rgb(255, 255, 255);
+    padding-bottom: 176px;
+}
+
+nav{
+    float:right;
+    margin-top: 49px;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu li{
+    float: left;
+    display: block;
+    margin-right: 40px;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: rgb(2,45,61);
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 15px;
+    float: left;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.8;
+}
+
+.logo:hover{
+    opacity: 1;
+}
+
+/* .Offer{
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 128px;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 130px;
+    margin-bottom: 77px;
+} */
+.Offer{
+    font-weight: 400;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 67px;
+    letter-spacing: 0.1em;
+    margin-top: 121.5px;
+    margin-bottom: 121.5px;
+}
+
+.Offer span{
+    font-weight: 300;
+    font-size: 45px;
+    display: block;
+}
+
+.CTA{
+    display: block;
+    border: 2px solid white;
+    border-radius: 0px;
+    width: 446px;
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0  auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.CTA:hover{
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    color: rgb(2,45,61);
+}
+
+.CTA2{
+    border: 2px solid rgb(2,45,61);
+    color: rgb(2,45,61);
+}
+
+.CTA2:hover{
+    background: rgb(2,45,61);
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: rgb(2,45,61);
+    margin-top: 89px;
+}
+
+.List{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-top: 126px;
+}
+
+.List_item{
+    width: 285px;
+    text-align: center;
+}
+
+.List_title{
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 38px;
+}
+
+
+
+.List_text{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    margin-top: 23px;
+}
+
+.Team{
+    /* display: block; */
+    border: 0px solid white;
+    border-radius: 0px;
+    width: 945px;
+    height: 630px;
+    margin: 96.8px auto 0;
+    box-shadow: 0px 0px 60px  rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.Team:hover{
+    border-radius: 20px;
+}
+
+.About_team{
+    text-align: center;
+}
+
+.About_title{
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 57px;
+    margin-bottom: 45px;
+}
+.About_text{
+    width: 952px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    margin: 0 auto;
+    margin-bottom: 57px;
+}
+
+.Footer{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: rgb(134, 134, 134);
+    background: rgb(2,45,61);
+    padding: 80px 0;
+    margin-top: 130px;
+}
+
+.Footer a{
+    /* display: block; */
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+.Footer a:hover{
+    color: rgb(134, 134, 134);
+}
+
+@media all and (max-width : 1140px){
+    .Header{
+        background: url('../img/Top_Background.jpg') no-repeat center top / cover;
+        padding-bottom: 80px;
+    }
+    .container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        display: block;
+        width: auto;
+        height: auto;
+        margin-top: 12px auto 0 auto;
+        margin-left: 25px;
+        opacity: 1;
+     }
+     nav{
+         margin-top: 25px;
+     }
+     .menu a{
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+    .menu a:hover{
+        color: rgb(2,45,61);
+    }
+    .menu li{
+        float: none;
+        display: block;
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        /* margin-right: 40px; */
+    }
+    .Offer{
+        font-weight: 400;
+        font-size: 17px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        margin-top: 70.5px;
+        margin-bottom: 70.5px;
+    }
+    .Offer span{
+        font-weight: 300;
+        font-size: 20px;
+        display: block;
+    }
+        
+    .CTA{
+        border: 1px solid white;
+        border-radius: 0px;
+        width: 190px;
+        padding: 7px 0;
+        font-weight: 400;
+        font-size: 13px;
+        margin: 0  auto;
+        transition: all 0.3s ease-in-out;        
+    }
+    .CTA:hover{
+        border-radius: 7px;
+        background: rgb(255, 255, 255);
+        color: rgb(2,45,61);
+        
+    }
+    .CTA2{
+     border: 1px solid rgb(2,45,61);
+    }
+
+    .CTA2:hover{
+        background: rgb(2,45,61);
+        color: rgb(255, 255, 255);
+    }
+    
+    h2{
+        font-weight: 400;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.08em;
+        color: rgb(2,45,61);
+        margin-top: 40px;
+    }
+
+    .List{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 55px;
+    }
+    
+    .List_item{
+        width: 285px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .Icon{
+        width: 45%;
+        height: 45%;
+    }
+    
+    .List_title{        
+        font-size: 20px;
+        margin-top: 30px;
+    } 
+        
+    .List_text{
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 25px;
+        letter-spacing: 0.08em;
+        margin-top: 20px;
+    }
+
+    .Team{
+        /* display: block; */
+        width: 75%;
+        height: 75%;
+        margin: 55px auto 0;
+        box-shadow: 0px 0px 60px  rgba(0, 0, 0, 0.2);
+    }
+    .Team:hover{
+        border-radius: 10px;
+    }
+    
+    .About_title{
+        font-size: 20px;
+        letter-spacing: 0.08em;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .About_text{
+        width: 75%;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.08em;
+        margin: 0 auto;
+        margin-bottom: 57px;
+    }
+    
+    .Footer{
+        font-size: 12px;
+        padding: 20px 0;
+        margin-top: 57px;
+    }
+    
+    .Footer a{
+        /* display: block; */
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: all 0.3s ease-in-out;
+    }
+    .Footer a:hover{
+        color: rgb(134, 134, 134);
+    }
+ }
