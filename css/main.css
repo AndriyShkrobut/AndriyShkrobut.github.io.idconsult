@@ -27,7 +27,7 @@ div, span, button, a, p, h1, h2, h3, h4, h5{
 }
 
 .Header{
-    background: url('../img/Top_Background1.jpg') no-repeat center top fixed;
+    background: url('../img/Top_Background.jpg') no-repeat center top fixed;
     color: rgb(255, 255, 255);
     height: 100vh;
 }
