@@ -1,10 +1,26 @@
-$(window).scroll(function(){
-    if ($(window).scrollTop() > 0) {
+$(window).scroll(function()
+{
+    if ($(window).scrollTop() > 0) 
+    {
         $('.heading').addClass('scroll');
     }
-    else {
+    else 
+    {
         $('.heading').removeClass('scroll');
     }
+});
+
+$(document).ready(function()
+{
+    $('.go_to').click(function()
+    {
+        var scroll_el = $(this).attr('href');
+        if(scroll_el.length != 0)
+        {
+            $('html, body').animate({scrollTop: $(scroll_el).offset().top - 145}, 1000);
+        }
+        return false;
+    });
 });
 
 // var anchors = [];
