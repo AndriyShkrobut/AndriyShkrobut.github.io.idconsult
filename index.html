@@ -8,70 +8,36 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 <body> 
     <div class="heading clearfix">
         <div class="frame">
             <div class="container">
-                <a data-track-click="footer-link-to-homepage" href="index.html"><img src="img/Logo.png" alt="ID Consult" class="logo"></a>
+                <a data-track-click="footer-link-to-homepage" href="index.html"><img src="img/Logo.png" alt="ID Consult" id="scroll" class="logo"></a>
                 <nav>
                     <ul class="menu">
                         <li>
-                            <a href="#">Головна</a>                        
+                            <a id="scroll" href="#">Головна</a>                        
                         </li>
                         <li>
-                            <a href="#About">Про компанію</a>
+                            <a id="scroll" href="#About">Про компанію</a>
                         </li>
                         <li>
-                            <a href="#Services">Послуги</a>
+                            <a id="scroll" href="#Services">Послуги</a>
                         </li>
                         <li>
-                            <a href="#Footer">Відгуки</a>
+                            <a id="scroll" href="#Footer">Відгуки</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </div>  
-    <header id="Header" class="Header">
-        <!-- <div class="heading clearfix">
-            <div class="frame">
-                <div class="container">
-                    <a data-track-click="footer-link-to-homepage" href="index.html"><img src="img/Logo.png" alt="ID Consult" class="logo"></a>
-                    <nav>
-                        <ul class="menu">
-                            <li>
-                                <a href="#">Головна</a>                        
-                            </li>
-                            <li>
-                                <a href="#About">Про компанію</a>
-                            </li>
-                            <li>
-                                <a href="#Services">Послуги</a>
-                            </li>
-                            <li>
-                                <a href="#Footer">Відгуки</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div> -->
-        
+    <header id="Header" class="Header">        
             <h1 class="Offer">
                 КОНСАЛТИНГОВІ ПОСЛУГИ
                 <span><br>Зробимо ваш об’єкт знаковим</span>
             </h1>
-            <!-- <div class=  "Offer">
-                <h1>
-                    Консалтингові послуги
-                </h1>
-                <div class="UnBold">
-                    Зробимо ваш об’єкт знаковим
-                </div>
-            </div> -->
-
             <a class="CTA" href="#Services">
                 Замовити Послугу
             </a>
@@ -120,7 +86,7 @@
             <h2>
                 про компанію
             </h2>
-            <a href="http://idconsult.com.ua/pro-kompaniju/" Target="_blank"><img src="img/About_Image.jpg" alt="Our Team" border="0" class="Team">
+            <a href="http://idconsult.com.ua/pro-kompaniju/" Target="_blank"><img src="img/About_Image.jpg" alt="Our Team" class="Team">
             </a>
             <h3 class="About_title">
                 –ID Consult–
@@ -138,5 +104,7 @@
                 <span>© 2018 ALL RIGHTS RESERVED </span><a class="Credits" data-track-click="footer-link-to-homepage" href="#Header">ID CONSULT</a>
         </div>        
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

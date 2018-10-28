@@ -27,21 +27,24 @@ div, span, button, a, p, h1, h2, h3, h4, h5{
 }
 
 .Header{
-    background: url('../img/Top_Background.jpg') no-repeat center top fixed;
+    background: url('../img/Top_Background1.jpg') no-repeat center top fixed;
     color: rgb(255, 255, 255);
-    padding-bottom: 176px;
+    height: 100vh;
 }
 
 .heading{
     display: block;
     padding: 10px 0;
-    background-color: rgba(2,45,61, 0.95);
+    background-color: transparent;
     position: fixed;
-    /* height: 70px; */
+    z-index: 100;
     width: 100%;
-    z-index: 5555;
+    transition: all 0.4s ease-in-out;
+}
+
+.scroll{
+    background-color: rgba(2,45,61, 0.95);
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
-    z-index: 900;
 }
 
 .frame{
@@ -51,11 +54,9 @@ div, span, button, a, p, h1, h2, h3, h4, h5{
 nav{
     padding: 9px 0;
     float: right;
-    /* margin-top: 49px; */
 }
 
 .menu{
-    /* padding: 25px 0; */
     margin: 0;
     display: block;
 }
@@ -75,7 +76,15 @@ nav{
     text-decoration: none;
     position: relative;
     transition: all 0.4s ease-in-out;
+    opacity: 1;
+}
+
+ .scroll #scroll{
     opacity: 0.8;
+}
+
+.scroll #scroll:hover{
+    opacity: 1;
 }
 
 .menu a::after {
@@ -86,11 +95,7 @@ nav{
     bottom: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
-    /* visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s; */
-    transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out;
   }
 
 .menu a:hover{
@@ -99,41 +104,21 @@ nav{
 }
 
 .menu a:hover::after {
-    /* visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1); */
     width: 100%;
   }
 
 .logo{
-    /* margin-top: 25px;
-    margin-left: 15px; */
     width: 55px;
     height: 55px;
     float: left;
-    opacity: 0.8;
+    opacity: 1;
     transition: all 0.4s ease-in-out;
 }
 
 .logo:hover{
-    opacity: 1;
+    transform: scale(1.08);
 }
 
-/* .Offer{
-    font-size: 45px;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 128px;
-}
-
-h1{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: 130px;
-    margin-bottom: 77px;
-} */
 .Offer{
     font-weight: 400;
     font-size: 45px;
@@ -141,7 +126,7 @@ h1{
     text-align: center;
     line-height: 67px;
     letter-spacing: 0.1em;
-    padding-top: 211.5px;
+    padding-top: 285px;
     margin-bottom: 121.5px;
     margin-top: 0px;
 }
@@ -154,7 +139,6 @@ h1{
 
 .CTA{
     display: block;
-    border: 2px solid white;
     border-radius: 0px;
     width: 446px;
     padding: 15px 0;
@@ -163,25 +147,19 @@ h1{
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.1em;
-    color: rgb(255, 255, 255);
+    color: rgb(2,45,61);
     text-decoration: none;
     margin: 0  auto;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
 }
 
 .CTA:hover{
-    border-radius: 15px;
-    background: rgb(255, 255, 255);
-    color: rgb(2,45,61);
-    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
 
 .CTA2{
-    border: 2px solid rgb(2,45,61);
-    color: rgb(2,45,61);
-}
-
-.CTA2:hover{
     background: rgb(2,45,61);
     color: rgb(255, 255, 255);
 }
@@ -230,25 +208,22 @@ h2{
 .banner{
     background-image: url('../img/banner.jpg');
     background-position: 50% 50%;
-    /* background-size: cover; */
     background-attachment: fixed;
     position: relative;
     height: 600px;
 }
 
 .Team{
-    /* display: block; */
-    border: 0px solid white;
-    border-radius: 0px;
     width: 945px;
     height: 630px;
     margin: 96.8px auto 0;
     box-shadow: 0px 0px 60px  rgba(0, 0, 0, 0.4);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    border-radius: 15px;
 }
 
 .Team:hover{
-    border-radius: 20px;
+    transform: scale(1.05);    
 }
 
 .About_team{
@@ -285,7 +260,6 @@ h2{
 }
 
 .Footer a{
-    /* display: block; */
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
@@ -329,7 +303,6 @@ h2{
         margin-bottom: 8px;
         display: flex;
         flex-direction: column;
-        /* margin-right: 40px; */
     }
     .Offer{
         font-weight: 400;
