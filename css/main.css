@@ -179,6 +179,7 @@ h2{
     display: -webkit-flex;
     justify-content: space-between;
     margin-top: 126px;
+    flex-wrap: wrap;
 }
 
 .List_item{
