@@ -201,6 +201,10 @@ h2{
     margin-bottom: 38px;
 }
 
+.Icon_team{
+    width: 250px;
+}
+
 .List_text{
     font-weight: 300;
     font-size: 20px;
@@ -228,26 +232,22 @@ h2{
     transform: scale(1.05);    
 }
 
-.About_team{
-    text-align: center;
-}
-
 .About_title{
     font-weight: 300;
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin-top: 57px;
     margin-bottom: 45px;
+    text-align: center;
 }
 .About_text{
-    width: 952px;
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.08em;
     margin: 0 auto;
-    margin-bottom: 57px;
+    margin-bottom: 10%;
+    text-align: center;
 }
 
 .banner2{
