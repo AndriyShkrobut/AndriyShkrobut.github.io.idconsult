@@ -315,7 +315,6 @@ h2{
 
 .Call_you h2{
     color: rgb(255, 255, 255);
-    margin-top: 0;
     margin-bottom: 10%;
 }
 
@@ -393,7 +392,7 @@ input:focus ~ .bar:after {
     justify-content: space-around;
     align-items: center;
     color: rgb(255, 255, 255);
-    margin: 2% 0;
+    margin: 3% 0;
 }
 
 .Credits_CTA{
