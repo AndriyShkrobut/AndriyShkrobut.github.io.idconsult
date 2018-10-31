@@ -297,8 +297,7 @@ h2{
     margin: 0;
 }
 
-.banner3{
-    background: rgb(2, 45, 61) no-repeat center fixed;
+.Contact_us{
     height: 100%;
     padding-top: 70px;
 }
@@ -412,7 +411,7 @@ input:focus ~ .bar:after {
 }
 
 .Footer{
-    background: rgb(2,45,61);
+    background: rgb(2,45,61) no-repeat center fixed;
     padding: 20px 0;
     font-weight: 300;
     font-size: 20px;
