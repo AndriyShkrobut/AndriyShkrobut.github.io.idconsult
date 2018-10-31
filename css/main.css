@@ -79,7 +79,7 @@ nav{
     opacity: 1;
 }
 
- .scroll #scroll{
+.scroll #scroll{
     opacity: 0.8;
 }
 
@@ -152,16 +152,16 @@ nav{
     margin: 0  auto;
     transition: all 0.4s ease-in-out;
     background: rgb(255, 255, 255);
-    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+#Header .CTA{
+    margin-bottom: 21.5%;
 }
 
 .CTA:hover{
     transform: scale(1.05);
-}
-
-.CTA2{
-    background: rgb(2,45,61);
-    color: rgb(255, 255, 255);
 }
 
 h2{
@@ -185,17 +185,21 @@ h2{
 .List_item{
     width: 285px;
     text-align: center;
+    margin: 0 20px;
 }
 
 .List_title{
     font-weight: 300;
     font-size: 30px;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin-top: 38px;
+    margin-top: 0px;
 }
 
-
+.Icon{
+    margin-bottom: 38px;
+}
 
 .List_text{
     font-weight: 300;
@@ -206,12 +210,9 @@ h2{
     margin-bottom: 70px;
 }
 
-.banner{
-    background-image: url('../img/banner.jpg');
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    position: relative;
-    height: 600px;
+.banner1{
+    background: url('../img/banner1.jpg') no-repeat center fixed;
+    height: 50vh;
 }
 
 .Team{
@@ -249,15 +250,175 @@ h2{
     margin-bottom: 57px;
 }
 
-.Footer{
+.banner2{
+    background: url('../img/banner2.jpg') no-repeat center fixed;
+    height: 50vh;
+}
+
+#Feedback{
+    margin-top: 70px;
+}
+
+.List_feedback{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    margin-top: 126px;
+    flex-wrap: wrap;
+}
+
+.List_item_feedback{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+.List_item_photo img{
+    display: block;
+    width: 80%;
+    margin-right: 0;
+}
+
+.List_item_text{
+    margin: 0;
+    text-align: left;
+    padding: 0 5%;
+}
+
+.Feedback_text{
+    margin-bottom: 20px;
+}
+
+.Author{
+    text-align: right;
+    font-size: 30px;
+    margin: 0;
+}
+
+.banner3{
+    background: rgb(2, 45, 61) no-repeat center fixed;
+    height: 100%;
+    padding-top: 70px;
+}
+
+ #Contacts h2{
+    color: rgb(255, 255, 255);
+    margin: 0 auto 12% auto;
+}
+
+
+.Call_you{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Call_you h2{
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 10%;
+}
+
+.Form{
+    margin: 0 auto;
+    width: 100%;
+}
+
+input{
+    box-sizing: border-box;
+    padding: 0.7% 0 0.7% 0.7%;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgb(134, 134, 134);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    opacity: 1;
+    outline: 0;
+    position: relative;
+}
+
+::placeholder{
+    color: rgb(134, 134, 134);
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:after {
+    content: "";
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    transition: 0.5s ease all;
+}
+
+.bar:after {
+    right: 100%;
+}
+
+input:focus ~ .bar:after {
+    width: 100%;
+}
+
+.name_input{
+    margin-bottom: 10%;
+    position: relative;
+}
+
+.Contacts{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Contacts h2{
+    color: rgb(255, 255, 255);
+}
+
+.Credits div{
+    margin: 0;
+}
+
+.Credits{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 2% 0;
+}
+
+.Credits_CTA{
+    width: 223px;
+    font-size: 15px;
+    margin: 0;
+}
+
+#Copyright{
     font-weight: 300;
     font-size: 20px;
     text-align: center;
     letter-spacing: 0.08em;
     color: rgb(134, 134, 134);
+}
+
+.Footer{
     background: rgb(2,45,61);
-    padding: 40px 0;
-    margin-top: 130px;
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: rgb(134, 134, 134);
 }
 
 .Footer a{
@@ -270,7 +431,7 @@ h2{
     color: rgb(134, 134, 134);
 }
 
-@media all and (max-width : 1140px){
+/* @media all and (max-width : 1140px){
     .Header{
         background: url('../img/Top_Background.jpg') no-repeat center top / cover;
         padding-bottom: 80px;
@@ -387,7 +548,7 @@ h2{
     }
 
     .Team{
-        /* display: block; */
+        display: block; 
         width: 75%;
         height: 75%;
         margin: 55px auto 0;
@@ -419,7 +580,7 @@ h2{
     }
     
     .Footer a{
-        /* display: block; */
+        display: block;
         text-decoration: none;
         color: rgb(255, 255, 255);
         transition: all 0.3s ease-in-out;
@@ -427,4 +588,4 @@ h2{
     .Footer a:hover{
         color: rgb(134, 134, 134);
     }
- }
+ } */
