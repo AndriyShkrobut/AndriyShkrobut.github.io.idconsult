@@ -315,6 +315,7 @@ h2{
 .Call_you h2{
     color: rgb(255, 255, 255);
     margin-bottom: 10%;
+    margin-top: 0;
 }
 
 .Form{
@@ -410,7 +411,7 @@ input:focus ~ .bar:after {
 
 .Footer{
     background: rgb(2,45,61) no-repeat center fixed;
-    padding: 20px 0;
+    padding: 70px 0 20px 0;
     font-weight: 300;
     font-size: 20px;
     text-align: center;
