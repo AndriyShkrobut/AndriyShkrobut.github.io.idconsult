@@ -27,14 +27,14 @@ div, span, button, a, p, h1, h2, h3, h4, h5{
 }
 
 .Header{
-    background: url('../img/Top_Background.jpg') no-repeat center top fixed;
+    background: url('../img/Top_Background.jpg') no-repeat center fixed;
     color: rgb(255, 255, 255);
     height: 100vh;
 }
 
 .heading{
     display: block;
-    padding: 10px 0;
+    padding: 0.5% 0;
     background-color: transparent;
     position: fixed;
     z-index: 100;
@@ -126,8 +126,8 @@ nav{
     text-align: center;
     line-height: 67px;
     letter-spacing: 0.1em;
-    padding-top: 285px;
-    margin-bottom: 121.5px;
+    padding-top: 26vh;
+    margin-bottom: 8.9%;
     margin-top: 0px;
 }
 
@@ -135,6 +135,7 @@ nav{
     font-weight: 300;
     font-size: 45px;
     display: block;
+    margin-top: 4.35%;
 }
 
 .CTA{
